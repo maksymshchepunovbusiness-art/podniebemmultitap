@@ -349,11 +349,19 @@ function Visit() {
           <div className="mt-12 space-y-6 text-cream/85">
             <div>
               <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-1">Adres</div>
-              <div className="text-xl font-display">Cieszyn, Polska</div>
+              <div className="text-xl font-display">Szeroka 3, 43-400 Cieszyn</div>
             </div>
             <div>
               <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-1">Godziny</div>
-              <div className="text-xl font-display">Codziennie · do 23:00</div>
+              <div className="font-display text-cream/90 space-y-1 mt-2">
+                <div className="flex justify-between gap-8"><span>Poniedziałek</span><span className="text-brass-glow">15:00–23:00</span></div>
+                <div className="flex justify-between gap-8"><span>Wtorek</span><span className="text-brass-glow">15:00–23:00</span></div>
+                <div className="flex justify-between gap-8"><span>Środa</span><span className="text-brass-glow">15:00–23:00</span></div>
+                <div className="flex justify-between gap-8"><span>Czwartek</span><span className="text-brass-glow">15:00–23:00</span></div>
+                <div className="flex justify-between gap-8"><span>Piątek</span><span className="text-brass-glow">13:00–02:00</span></div>
+                <div className="flex justify-between gap-8"><span>Sobota</span><span className="text-brass-glow">13:00–03:00</span></div>
+                <div className="flex justify-between gap-8"><span>Niedziela</span><span className="text-brass-glow">13:00–23:00</span></div>
+              </div>
             </div>
             <div className="flex gap-4 pt-4">
               <a href="#" aria-label="Instagram" className="btn-ghost-brass w-12 h-12 rounded-full grid place-items-center">IG</a>
