@@ -363,16 +363,18 @@ function Visit() {
                 <div className="flex justify-between gap-8"><span>Niedziela</span><span className="text-brass-glow">13:00–23:00</span></div>
               </div>
             </div>
-            <div className="flex gap-4 pt-4">
-              <a href="#" aria-label="Instagram" className="btn-ghost-brass w-12 h-12 rounded-full grid place-items-center">IG</a>
-              <a href="#" aria-label="Google Reviews" className="btn-ghost-brass px-5 h-12 rounded-full grid place-items-center text-xs uppercase tracking-[0.2em]">
+              <a href="https://www.google.com/maps/place/Pod+Niebem+-+Multitap/@49.7489204,18.6323319,14z/data=!4m18!1m8!2m7!1sRestauracje!3m5!2sRestauracja+Zajazd+Trzech+Braci!3s0x471403e39cc743bb:0x4cd965055f3adfb2!4m2!1d18.6358901!2d49.7623585!3m8!1s0x4714035f4516af1d:0x54f94afdc14b75ac!8m2!3d49.7491876!4d18.6345334!9m1!1b1!15sCgtSZXN0YXVyYWNqZVoNIgtyZXN0YXVyYWNqZZIBC2JlZXJfZ2FyZGVumgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0NFRtUnRUa2hWVldNelVURk9WMW93U1RKaWFUQXdVbnBDUmxsclJSQULgAQD6AQQIABBA!16s%2Fg%2F11kqclk0j4?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Google Reviews" className="btn-ghost-brass px-5 h-12 rounded-full grid place-items-center text-xs uppercase tracking-[0.2em]">
                 4.8 ★ Google
               </a>
-            </div>
           </div>
         </div>
 
-        <div className="reveal aspect-square md:aspect-auto rounded-sm overflow-hidden border border-border shadow-[var(--shadow-warm)] relative grain">
+        <a
+          href="https://www.google.com/maps/place/Pod+Niebem+-+Multitap/@49.7489204,18.6323319,14z/data=!4m16!1m8!2m7!1sRestauracje!3m5!2sRestauracja+Zajazd+Trzech+Braci!3s0x471403e39cc743bb:0x4cd965055f3adfb2!4m2!1d18.6358901!2d49.7623585!3m6!1s0x4714035f4516af1d:0x54f94afdc14b75ac!8m2!3d49.7491876!4d18.6345334!15sCgtSZXN0YXVyYWNqZVoNIgtyZXN0YXVyYWNqZZIBC2JlZXJfZ2FyZGVumgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0NFRtUnRUa2hWVldNelVURk9WMW93U1RKaWFUQXdVbnBDUmxsclJSQULgAQD6AQQIABBA!16s%2Fg%2F11kqclk0j4?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="reveal aspect-square md:aspect-auto rounded-sm overflow-hidden border border-border shadow-[var(--shadow-warm)] relative grain group"
+        >
           <div className="absolute inset-0 bg-gradient-to-br from-forest to-espresso" />
           <div className="absolute inset-0 opacity-30" style={{
             backgroundImage: "radial-gradient(circle at 30% 40%, var(--brass) 1px, transparent 1px), radial-gradient(circle at 70% 60%, var(--brass) 1px, transparent 1px)",
@@ -383,9 +385,10 @@ function Visit() {
               <div className="text-6xl mb-4">📍</div>
               <div className="text-brass-glow font-display text-2xl">Cieszyn</div>
               <div className="text-muted-foreground text-sm uppercase tracking-[0.3em] mt-2">Pod Niebem</div>
+              <div className="mt-4 text-xs uppercase tracking-[0.2em] text-brass/70 opacity-0 group-hover:opacity-100 transition-opacity">Otwórz w Google Maps →</div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
   );
