@@ -20,16 +20,18 @@ export const Route = createFileRoute("/")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "BarOrPub",
-          "@id": "https://podniebemmultitap.lovable.app",
+          "@type": ["BarOrPub", "LocalBusiness"],
+          "@id": "https://podniebemmultitap.lovable.app/#business",
           "name": "Pod Niebem – Multitap",
           "alternateName": "Pod Niebem",
-          "url": "https://podniebemmultitap.lovable.app",
+          "url": "https://podniebemmultitap.lovable.app/",
+          "image": "https://podniebemmultitap.lovable.app/og-image.jpg",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Szeroka 3",
             "addressLocality": "Cieszyn",
             "postalCode": "43-400",
+            "addressRegion": "Śląskie",
             "addressCountry": "PL"
           },
           "geo": {
@@ -69,14 +71,14 @@ export const Route = createFileRoute("/")({
           ],
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "158",
-            "bestRating": "5",
-            "worstRating": "1"
+            "ratingValue": 4.8,
+            "reviewCount": 158,
+            "bestRating": 5,
+            "worstRating": 1
           },
           "priceRange": "$$",
           "servesCuisine": ["Polish", "Czech", "Craft Beer"],
-          "paymentAccepted": "Cash, Credit Card",
+          "paymentAccepted": ["Cash", "Credit Card"],
           "currenciesAccepted": "PLN"
         }),
       },
