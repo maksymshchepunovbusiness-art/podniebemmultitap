@@ -6,6 +6,82 @@ import gardenImg from "@/assets/garden.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Pod Niebem · Multitap — Cieszyn" },
+      { name: "description", content: "Ukryty raj w sercu Cieszyna. 10 kranów, czeskie piwa, ogród i klimat, którego nie zapomnisz." },
+      { property: "og:title", content: "Pod Niebem · Multitap — Cieszyn" },
+      { property: "og:description", content: "Ukryty raj w sercu Cieszyna. 10 kranów, czeskie piwa, ogród i klimat, którego nie zapomnisz." },
+      { property: "og:url", content: "https://podniebemmultitap.lovable.app/" },
+      { property: "og:type", content: "website" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BarOrPub",
+          "@id": "https://podniebemmultitap.lovable.app",
+          "name": "Pod Niebem – Multitap",
+          "alternateName": "Pod Niebem",
+          "url": "https://podniebemmultitap.lovable.app",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Szeroka 3",
+            "addressLocality": "Cieszyn",
+            "postalCode": "43-400",
+            "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 49.7491876,
+            "longitude": 18.6345334
+          },
+          "hasMap": "https://www.google.com/maps/place/Pod+Niebem+-+Multitap",
+          "sameAs": [
+            "https://www.google.com/maps/place/Pod+Niebem+-+Multitap/@49.7489204,18.6323319,14z/data=!4m18!1m8!2m7!1sRestauracje!3m5!2sRestauracja+Zajazd+Trzech+Braci!3s0x471403e39cc743bb:0x4cd965055f3adfb2!4m2!1d18.6358901!2d49.7623585!3m8!1s0x4714035f4516af1d:0x54f94afdc14b75ac!8m2!3d49.7491876!4d18.6345334!9m1!1b1!15sCgtSZXN0YXVyYWNqZVoNIgtyZXN0YXVyYWNqZZIBC2JlZXJfZ2FyZGVumgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0NFRtUnRUa2hWVldNelVURk9WMW93U1RKaWFUQXdVbnBDUmxsclJSQULgAQD6AQQIABBA!16s%2Fg%2F11kqclk0j4?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D"
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+              "opens": "15:00",
+              "closes": "23:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Friday",
+              "opens": "13:00",
+              "closes": "02:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "13:00",
+              "closes": "03:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Sunday",
+              "opens": "13:00",
+              "closes": "23:00"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "158",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "priceRange": "$$",
+          "servesCuisine": ["Polish", "Czech", "Craft Beer"],
+          "paymentAccepted": "Cash, Credit Card",
+          "currenciesAccepted": "PLN"
+        }),
+      },
+    ],
+  }),
 });
 
 function useReveal() {
