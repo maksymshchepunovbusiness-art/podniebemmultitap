@@ -75,11 +75,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Pod Niebem · Multitap — Cieszyn's hidden craft beer garden" },
       { name: "description", content: "A hidden paradise in the heart of Cieszyn. 10 craft taps, Czech imports, cocktails, and the most beautiful beer garden in town." },
       { name: "author", content: "Pod Niebem Multitap" },
-      { property: "og:title", content: "Pod Niebem · Multitap — Cieszyn" },
-      { property: "og:description", content: "Unassuming from the outside. Unforgettable once you're in." },
+      { property: "og:title", content: "Pod Niebem · Multitap — Cieszyn's hidden craft beer garden" },
+      { property: "og:description", content: "A hidden paradise in the heart of Cieszyn. 10 craft taps, Czech imports, cocktails, and the most beautiful beer garden in town." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Pod Niebem · Multitap — Cieszyn's hidden craft beer garden" },
+      { name: "twitter:description", content: "A hidden paradise in the heart of Cieszyn. 10 craft taps, Czech imports, cocktails, and the most beautiful beer garden in town." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e208485a-0648-4e9a-9997-fff265af9e1b/id-preview-e340636b--b5e649b7-1ed0-46cb-9fe5-6ca2a6bb3c12.lovable.app-1778967727939.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e208485a-0648-4e9a-9997-fff265af9e1b/id-preview-e340636b--b5e649b7-1ed0-46cb-9fe5-6ca2a6bb3c12.lovable.app-1778967727939.png" },
     ],
     links: [
       {
